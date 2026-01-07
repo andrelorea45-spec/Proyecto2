@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Implementa Software</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(135deg, #ff9966, #ff5e62);
+      text-align: center;
+      color: #fff;
+    }
+    h1 {
+      font-size: 2.5em;
+      color: #fff176;
+      text-shadow: 2px 2px #fbc02d;
+    }
+    p {
+      font-size: 1.2em;
+      margin: 20px;
+    }
+    a {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background: #fff176;
+      color: #000;
+      border-radius: 8px;
+      text-decoration: none;
+    }
+    a:hover {
+      background: #fbc02d;
+    }
+  </style>
+<style>
+  html { scroll-behavior: smooth; }
+  nav {
+    background:#ff9800; padding:12px; position:fixed; top:0; left:0; width:100%;
+    z-index:1000; display:flex; justify-content:center; gap:20px;
+    box-shadow:0 2px 6px rgba(0,0,0,0.2);
+  }
+  nav a {
+    color:#fff; text-decoration:none; font-weight:bold; padding:6px 12px;
+    border-radius:6px; transition:background 0.3s;
+  }
+  nav a:hover { background:#f57c00; }
+  section { padding:90px 20px 40px; border-bottom:1px solid #ddd; }
+  h2 { color:#0d47a1; }
+</style>
+<style> 
+.pregunta { background:#fff; border:1px solid #ddd; border-radius:8px; padding:12px; margin:12px 0; }
+ .opcion { display:block; margin:6px 0; cursor:pointer; } 
+ .correcta { background:#c8e6c9; border:1px solid #2e7d32; } 
+ .incorrecta { background:#ffcdd2; border:1px solid #c62828; } 
+ .explicacion { font-size:0.9em; color:#444; margin-top:6px; } 
+ #resultadoImp { font-weight:bold; color:#e65100; text-align:center; margin-top:16px; }
+  #accionesImp { display:flex; gap:12px; justify-content:center; margin-top:16px; } 
+  button { background:#e65100; color:#fff; border:none; border-radius:6px; padding:10px 14px; cursor:pointer; }
+   button:hover { background:#bf360c; } 
+   .separador { margin:22px 0 8px; font-weight:bold; color:#6d4c41; } 
+   </style>
+</head>
+<body>
+<nav>
+  <a href="#algoritmos">Algoritmos</a>
+  <a href="#datos">Tipos de datos MySQL</a>
+  <a href="#ciclo">Ciclo de vida</a>
+  <a href="#sql">Comandos SQL</a>
+  <a href="#pdfs">Pdfs de trabajos</a>
+
+</nav>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+  <h1>⚙️ Implementa Software</h1>
+
+
+
+<section id="algoritmos">
+  <h2>⚙️ Algoritmos</h2>
+   <!-- Tema: Algoritmos -->
+<section style="margin:30px auto; padding:20px; background:#f5f5f5; border-radius:12px; width:85%; box-shadow:2px 2px 12px rgba(0,0,0,0.15); text-align:left; color:#333;">
+  <h2 style="color:#3f51b5; text-align:center;"> Algoritmos</h2>
+  <p style="font-size:1.1em;">Un <strong>algoritmo</strong> es una secuencia ordenada de pasos o instrucciones que permiten resolver un problema o realizar una tarea.</p>
+
+  <div style="background:#e8eaf6; padding:15px; border-radius:8px; margin-top:20px;">
+    <h3 style="color:#673ab7;"> Características de un algoritmo</h3>
+    <ul>
+      <li><strong>Definido:</strong> cada paso debe estar claro y sin ambigüedades.</li>
+      <li><strong>Ordenado:</strong> los pasos se siguen en una secuencia lógica.</li>
+      <li><strong>Finito:</strong> debe terminar después de un número limitado de pasos.</li>
+      <li><strong>Eficiente:</strong> debe resolver el problema de la mejor manera posible.</li>
+    </ul>
+  </div>
+
+  <div style="background:#ede7f6; padding:15px; border-radius:8px; margin-top:20px;">
+    <h3 style="color:#3f51b5;"> Ejemplo práctico</h3>
+    <p>Algoritmo para preparar un vaso de agua con limón:</p>
+    <ol>
+      <li>Tomar un vaso.</li>
+      <li>Llenar el vaso con agua.</li>
+      <li>Cortar un limón.</li>
+      <li>Exprimir el limón en el vaso.</li>
+      <li>Mezclar y beber.</li>
+    </ol>
+  </div>
+
+  <div style="background:#e3f2fd; padding:15px; border-radius:8px; margin-top:20px;">
+    <h3 style="color:#2196f3;"> Ejemplo en pseudocódigo</h3>
+    <pre style="background:#fff; padding:10px; border-radius:6px; border:1px solid #ccc; color:#000;">
+Inicio
+  Leer número1, número2
+  suma ← número1 + número2
+  Escribir "La suma es:", suma
+Fin
+    </pre>
+  </div>
+
+  <div style="background:#f3e5f5; padding:15px; border-radius:8px; margin-top:20px;">
+    <h3 style="color:#9c27b0;"> Tips </h3>
+    <ul>
+      <li>Los algoritmos pueden expresarse en lenguaje natural, diagramas de flujo o pseudocódigo.</li>
+      <li>Son la base para escribir programas en cualquier lenguaje de programación.</li>
+      <li>Un buen algoritmo simplifica la implementación y reduce errores.</li>
+    </ul>
+  </div>
+</section>
+</section>
+
+
+<section id="datos">
+  <h2>🗄️ Tipos de datos en MySQL</h2>
+  <!-- Tema: Tipos de Datos en MySQL -->
+<section style="margin:30px auto; padding:20px; background:#f9fbe7; border-radius:12px; width:85%; box-shadow:2px 2px 12px rgba(0,0,0,0.15); text-align:left; color:#333;">
+  <h2 style="color:#2e7d32; text-align:center;"> Tipos de Datos en MySQL</h2>
+  <p style="font-size:1.1em;">En MySQL, los <strong>tipos de datos</strong> definen cómo se almacenan y manipulan los valores en una tabla. 
+     Elegir el tipo adecuado asegura <em>eficiencia</em>, <em>precisión</em> y <em>optimización</em> del espacio.</p>
+
+  <div style="background:#e8f5e9; padding:15px; border-radius:8px; margin-top:20px;">
+    <h3 style="color:#1b5e20;"> Tipos numéricos</h3>
+    <ul>
+      <li><code>TINYINT</code>: enteros pequeños (-128 a 127).</li>
+      <li><code>INT</code>: enteros estándar (≈ -2 mil millones a +2 mil millones).</li>
+      <li><code>DECIMAL(p,d)</code>: números exactos con decimales, ideal para dinero.</li>
+      <li><code>FLOAT / DOUBLE</code>: números con decimales de precisión variable.</li>
+    </ul>
+  </div>
+
+  <div style="background:#e3f2fd; padding:15px; border-radius:8px; margin-top:20px;">
+    <h3 style="color:#0d47a1;"> Tipos de fecha y hora</h3>
+    <ul>
+      <li><code>DATE</code>: almacena fechas (AAAA-MM-DD).</li>
+      <li><code>DATETIME</code>: fecha y hora completas.</li>
+      <li><code>TIMESTAMP</code>: fecha/hora con zona horaria, útil para registros.</li>
+      <li><code>TIME</code>: solo horas, minutos y segundos.</li>
+    </ul>
+  </div>
+
+  <div style="background:#ede7f6; padding:15px; border-radius:8px; margin-top:20px;">
+    <h3 style="color:#4a148c;"> Tipos de cadena</h3>
+    <ul>
+      <li><code>CHAR(n)</code>: cadena de longitud fija.</li>
+      <li><code>VARCHAR(n)</code>: cadena de longitud variable.</li>
+      <li><code>TEXT</code>: texto largo.</li>
+      <li><code>BLOB</code>: datos binarios (imágenes, archivos).</li>
+    </ul>
+  </div>
+
+  <h3 style="margin-top:20px; color:#2e7d32;">Ejemplo práctico</h3>
+  <pre style="background:#fff; padding:10px; border-radius:6px; border:1px solid #ccc; color:#000;">
+CREATE TABLE Usuarios (
+  id INT PRIMARY KEY,
+  nombre VARCHAR(50),
+  edad TINYINT,
+  saldo DECIMAL(10,2),
+  fecha_registro DATETIME
+);
+  </pre>
+
+  <h3 style="margin-top:20px; color:#0d47a1;"> Tips </h3>
+  <ul>
+    <li>Usa <code>decimal</code> para valores financieros, evita <code>float</code> por errores de redondeo.</li>
+    <li><code>varchar</code> es más flexible que <code>char</code> para textos variables.</li>
+    <li><code>timestamp</code> es ideal para auditorías y registros automáticos.</li>
+    <li>Elige siempre el tipo más pequeño posible para ahorrar espacio.</li>
+  </ul>
+</section>
+</section>
+
+<section id="ciclo">
+  <h2>🔄 Ciclo de vida del desarrollo</h2>
+  
+<!-- Tema: Ciclo de Vida del Desarrollo de un Sistema -->
+<section style="margin:30px auto; padding:20px; background:#fff3e0; border-radius:12px; width:85%; box-shadow:2px 2px 12px rgba(0,0,0,0.15); text-align:left; color:#333;">
+  <h2 style="color:#ef6c00; text-align:center;"> Ciclo de Vida del Desarrollo de un Sistema</h2>
+  <p style="font-size:1.1em;">El ciclo de vida de un sistema describe las <strong>etapas necesarias</strong> para planear, construir, probar e implementar un software de manera ordenada y eficiente.</p>
+
+  <!-- Etapa 1 -->
+  <div style="background:#ffe0b2; padding:15px; border-radius:8px; margin-top:20px;">
+    <h3 style="color:#ef6c00;">1️⃣ Planeación</h3>
+    <p>Definir objetivos, alcance, recursos y cronograma del proyecto. Se identifican necesidades y se evalúa la viabilidad.</p>
+  </div>
+
+  <!-- Etapa 2 -->
+  <div style="background:#bbdefb; padding:15px; border-radius:8px; margin-top:20px;">
+    <h3 style="color:#0d47a1;">2️⃣ Diseño</h3>
+    <p>Se crean modelos, diagramas y arquitecturas del sistema. Se define cómo funcionará y cómo se verá.</p>
+  </div>
+
+  <!-- Etapa 3 -->
+  <div style="background:#ffe0b2; padding:15px; border-radius:8px; margin-top:20px;">
+    <h3 style="color:#ef6c00;">3️⃣ Desarrollo</h3>
+    <p>Los programadores escriben el código siguiendo el diseño establecido. Se construyen módulos y funciones.</p>
+  </div>
+
+  <!-- Etapa 4 -->
+  <div style="background:#bbdefb; padding:15px; border-radius:8px; margin-top:20px;">
+    <h3 style="color:#0d47a1;">4️⃣ Pruebas</h3>
+    <p>Se verifican errores, se validan funciones y se asegura que el sistema cumpla con los requisitos.</p>
+  </div>
+
+  <!-- Etapa 5 -->
+  <div style="background:#ffe0b2; padding:15px; border-radius:8px; margin-top:20px;">
+    <h3 style="color:#ef6c00;">5️⃣ Implementación</h3>
+    <p>El sistema se instala y se pone en marcha. Los usuarios comienzan a utilizarlo en un entorno real.</p>
+  </div>
+
+  <!-- Etapa 6 -->
+  <div style="background:#bbdefb; padding:15px; border-radius:8px; margin-top:20px;">
+    <h3 style="color:#0d47a1;">6️⃣ Mantenimiento</h3>
+    <p>Se realizan actualizaciones, correcciones y mejoras para asegurar que el sistema siga funcionando correctamente.</p>
+  </div>
+
+  <h3 style="margin-top:20px; color:#ef6c00;"> Tips </h3>
+  <ul>
+    <li>El ciclo de vida es iterativo: a veces se regresa a etapas anteriores.</li>
+    <li>Una buena planeación reduce costos y errores en etapas posteriores.</li>
+    <li>Las pruebas son esenciales para garantizar calidad y seguridad.</li>
+    <li>El mantenimiento asegura la evolución del sistema a largo plazo.</li>
+  </ul>
+</section>
+</section>
+
+<section id="sql">
+  <h2>💻 Comandos SQL básicos</h2>
+  <!-- Tema: Comandos SQL básicos -->
+<section style="margin:30px auto; padding:20px; background:#f1f8e9; border-radius:12px; width:85%; box-shadow:2px 2px 12px rgba(0,0,0,0.15); text-align:left; color:#333;">
+  <h2 style="color:#2e7d32; text-align:center;"> Comandos SQL básicos en MySQL</h2>
+  <p style="font-size:1.1em;">Los comandos SQL permiten <strong>consultar</strong>, <strong>insertar</strong>, <strong>eliminar</strong> y <strong>actualizar</strong> datos en una base de datos. Aquí tienes un cuadro comparativo con su función y ejemplos.</p>
+
+  <table style="width:100%; border-collapse:collapse; margin-top:20px; background:#fff;">
+    <tr style="background:#a5d6a7; color:#000;">
+      <th style="border:1px solid #2e7d32; padding:10px;">Comando</th>
+      <th style="border:1px solid #2e7d32; padding:10px;">Función</th>
+      <th style="border:1px solid #2e7d32; padding:10px;">Ejemplo</th>
+    </tr>
+    <tr>
+      <td style="border:1px solid #2e7d32; padding:10px;"><code>SELECT</code></td>
+      <td style="border:1px solid #2e7d32; padding:10px;">Consulta datos de una tabla.</td>
+      <td style="border:1px solid #2e7d32; padding:10px;"><code>SELECT nombre, edad FROM Usuarios;</code></td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #2e7d32; padding:10px;"><code>INSERT</code></td>
+      <td style="border:1px solid #2e7d32; padding:10px;">Agrega nuevos registros a una tabla.</td>
+      <td style="border:1px solid #2e7d32; padding:10px;"><code>INSERT INTO Usuarios (nombre, edad) VALUES ('Andre', 25);</code></td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #2e7d32; padding:10px;"><code>DELETE</code></td>
+      <td style="border:1px solid #2e7d32; padding:10px;">Elimina registros existentes.</td>
+      <td style="border:1px solid #2e7d32; padding:10px;"><code>DELETE FROM Usuarios WHERE id = 3;</code></td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #2e7d32; padding:10px;"><code>UPDATE</code></td>
+      <td style="border:1px solid #2e7d32; padding:10px;">Modifica datos de registros existentes.</td>
+      <td style="border:1px solid #2e7d32; padding:10px;"><code>UPDATE Usuarios SET edad = 26 WHERE nombre = 'Andre';</code></td>
+    </tr>
+  </table>
+
+  <h3 style="margin-top:20px; color:#2e7d32;"> Tips </h3>
+  <ul>
+    <li>Siempre usa <code>WHERE</code> en <code>DELETE</code> y <code>UPDATE</code> para evitar afectar todos los registros.</li>
+    <li><code>SELECT *</code> muestra todas las columnas de la tabla.</li>
+    <li><code>INSERT</code> requiere especificar columnas y valores en el mismo orden.</li>
+    <li>Estos comandos son la base para manipular cualquier base de datos en MySQL.</li>
+  </ul>
+</section>
+</section>
+
+<section id="pdfs">
+      <embed src="implementa .pdf" type="application/pdf" width="100%" height="600px" />
+</section>
+
+
+<!-- Quiz de Implementa -->
+<section id="quizImplementa" style="margin:30px auto; padding:20px; background:#fff3e0; border-radius:12px; width:85%; box-shadow:0 4px 12px rgba(0,0,0,0.2); color:#333;">
+  <h2 style="text-align:center; color:#e65100;">🧠 Quiz de Implementa (20 preguntas)</h2>
+  <p style="text-align:center;">Temas: Algoritmos, Procesos, Tipos de datos MySQL, Ciclo de vida y Comandos SQL.</p>
+
+  <style>
+    .pregunta { background:#fff; border:1px solid #ddd; border-radius:8px; padding:12px; margin:12px 0; }
+    .opcion { display:block; margin:6px 0; cursor:pointer; }
+    .correcta { background:#c8e6c9; border:1px solid #2e7d32; }
+    .incorrecta { background:#ffcdd2; border:1px solid #c62828; }
+    .explicacion { font-size:0.9em; color:#444; margin-top:6px; }
+    #resultadoImp { font-weight:bold; color:#e65100; text-align:center; margin-top:16px; }
+    #accionesImp { display:flex; gap:12px; justify-content:center; margin-top:16px; }
+    button { background:#e65100; color:#fff; border:none; border-radius:6px; padding:10px 14px; cursor:pointer; }
+    button:hover { background:#bf360c; }
+    .separador { margin:22px 0 8px; font-weight:bold; color:#6d4c41; }
+  </style>
+
+  <div id="contenedorPreguntasImp"></div>
+
+  <div id="accionesImp">
+    <button id="calcularImp">Calcular Puntaje</button>
+    <button id="mostrarCorrectasImp" style="background:#2e7d32;">Mostrar respuestas correctas</button>
+    <button id="reiniciarImp" style="background:#2196f3;">Reiniciar</button>
+  </div>
+  <div id="resultadoImp"></div>
+
+  <script>
+    const preguntasImp = [
+      // Algoritmos (1-4)
+      {t:"Algoritmos", q:"1) ¿Qué es un algoritmo?", opciones:["Un programa","Una secuencia de pasos","Un lenguaje","Un diagrama UML"], correcta:1, exp:"Un algoritmo es una secuencia ordenada de pasos para resolver un problema."},
+      {t:"Algoritmos", q:"2) ¿Qué característica debe tener un algoritmo?", opciones:["Ambigüedad","Claridad","Aleatoriedad","Infinito"], correcta:1, exp:"Debe ser claro y preciso."},
+      {t:"Algoritmos", q:"3) ¿Qué estructura representa gráficamente un algoritmo?", opciones:["Diagrama de flujo","Tabla","Gráfico de barras","Mapa mental"], correcta:0, exp:"El diagrama de flujo representa algoritmos."},
+      {t:"Algoritmos", q:"4) ¿Qué lenguaje se usa para describir algoritmos?", opciones:["Pseudocódigo","Java","SQL","HTML"], correcta:0, exp:"El pseudocódigo describe algoritmos."},
+
+      // Procesos (5-8)
+      {t:"Procesos", q:"5) ¿Qué es un proceso en software?", opciones:["Un archivo","Una tarea en ejecución","Un algoritmo","Un dato"], correcta:1, exp:"Un proceso es un programa en ejecución."},
+      {t:"Procesos", q:"6) ¿Qué herramienta se usa para modelar procesos?", opciones:["Diagrama de flujo","BPMN","ERD","SQL"], correcta:1, exp:"BPMN modela procesos de negocio."},
+      {t:"Procesos", q:"7) ¿Qué representa un rectángulo en un diagrama de flujo?", opciones:["Decisión","Proceso","Entrada/Salida","Conector"], correcta:1, exp:"El rectángulo representa un proceso."},
+      {t:"Procesos", q:"8) ¿Qué representa un rombo en un diagrama de flujo?", opciones:["Proceso","Decisión","Inicio","Fin"], correcta:1, exp:"El rombo representa una decisión."},
+
+      // MySQL (9-12)
+      {t:"MySQL", q:"9) ¿Qué tipo de dato almacena texto?", opciones:["INT","VARCHAR","DATE","BOOLEAN"], correcta:1, exp:"VARCHAR almacena texto variable."},
+      {t:"MySQL", q:"10) ¿Qué tipo de dato almacena fechas?", opciones:["DATE","VARCHAR","INT","TIME"], correcta:0, exp:"DATE almacena fechas."},
+      {t:"MySQL", q:"11) ¿Qué tipo de dato almacena valores lógicos?", opciones:["BOOLEAN","VARCHAR","INT","FLOAT"], correcta:0, exp:"BOOLEAN almacena true/false."},
+      {t:"MySQL", q:"12) ¿Qué tipo de dato almacena números decimales?", opciones:["FLOAT","VARCHAR","DATE","BOOLEAN"], correcta:0, exp:"FLOAT almacena decimales."},
+
+      // Ciclo de vida (13-16)
+      {t:"Ciclo de vida", q:"13) ¿Cuál es la primera fase del ciclo de vida?", opciones:["Diseño","Análisis","Implementación","Prueba"], correcta:1, exp:"Primero se realiza el análisis de requisitos."},
+      {t:"Ciclo de vida", q:"14) ¿Qué fase sigue al diseño?", opciones:["Implementación","Prueba","Mantenimiento","Análisis"], correcta:0, exp:"Después del diseño se implementa."},
+      {t:"Ciclo de vida", q:"15) ¿Qué fase detecta errores?", opciones:["Prueba","Diseño","Análisis","Mantenimiento"], correcta:0, exp:"La fase de pruebas detecta errores."},
+      {t:"Ciclo de vida", q:"16) ¿Qué fase asegura la continuidad del software?", opciones:["Mantenimiento","Diseño","Prueba","Análisis"], correcta:0, exp:"El mantenimiento asegura continuidad."},
+
+      // SQL (17-20)
+      {t:"SQL", q:"17) ¿Qué comando selecciona datos?", opciones:["SELECT","INSERT","UPDATE","DELETE"], correcta:0, exp:"SELECT obtiene datos."},
+      {t:"SQL", q:"18) ¿Qué comando inserta datos?", opciones:["SELECT","INSERT","UPDATE","DELETE"], correcta:1, exp:"INSERT agrega datos."},
+      {t:"SQL", q:"19) ¿Qué comando actualiza datos?", opciones:["SELECT","INSERT","UPDATE","DELETE"], correcta:2, exp:"UPDATE modifica datos."},
+      {t:"SQL", q:"20) ¿Qué comando elimina datos?", opciones:["SELECT","INSERT","UPDATE","DELETE"], correcta:3, exp:"DELETE elimina datos."}
+    ];
+
+    function crearQuizImp() {
+      const cont = document.getElementById('contenedorPreguntasImp');
+      let temaActual = "";
+      preguntasImp.forEach((p,i) => {
+        if (p.t !== temaActual) {
+          temaActual = p.t;
+          const sep = document.createElement('div');
+          sep.className = 'separador';
+          sep.textContent = `Tema: ${temaActual}`;
+          cont.appendChild(sep);
+        }
+        const caja = document.createElement('div');
+        caja.className = 'pregunta';
+        caja.id = `pregImp-${i}`;
+
+        const titulo = document.createElement('div');
+        titulo.innerHTML = `<strong>${p.q}</strong>`;
+        caja.appendChild(titulo);
+
+        p.opciones.forEach((op, idx) => {
+          const idInput = `pImp${i}_op${idx}`;
+          const label = document.createElement('label');
+          label.className = 'opcion';
+          label.setAttribute('for', idInput);
+
+          const input = document.createElement('input');
+          input.type = 'radio';
+          input.name = `pImp${i}`;
+          input.id = idInput;
+          input.value = idx;
+          input.style.marginRight = '8px';
+
+          label.appendChild(input);
+          label.appendChild(document.createTextNode(op));
+          caja.appendChild(label);
+        });
+
+        const expl = document.createElement('div');
+        expl.className = 'explicacion';
+        expl.id = `expImp-${i}`;
+        expl.style.display = 'none';
+        expl.textContent = p.exp;
+        caja.appendChild(expl);
+
+        cont.appendChild(caja);
+      });
+    }
+
+    function calcularImp() {
+      let aciertos = 0;
+      preguntasImp.forEach((p, i) => {
+        const opciones = document.getElementsByName(`pImp${i}`);
+        let seleccion = -1;
+        Array.from(opciones).forEach(op => { if (op.checked) seleccion = parseInt(op.value); });
+
+        const caja = document.getElementById(`pregImp-${i}`);
+        Array.from(caja.querySelectorAll('.opcion')).forEach(l => {
+          l.classList.remove('correcta', 'incorrecta');
+        });
+
+        if (seleccion === p.correcta) {
+          aciertos++;
+          const labelSel = document.querySelector(`label[for="pImp${i}_op${seleccion}"]`);
+          if (labelSel) labelSel.classList.add('correcta');
+        } else {
+          if (seleccion !== -1) {
+            const labelSel = document.querySelector(`label[for="pImp${i}_op${seleccion}"]`);
+            if (labelSel) labelSel.classList.add('incorrecta');
+          }
+          const labelOk = document.querySelector(`label[for="pImp${i}_op${p.correcta}"]`);
+          if (labelOk) labelOk.classList.add('correcta');
+        }
+
+        const expl = document.getElementById(`expImp-${i}`);
+        expl.style.display = 'block';
+      });
+      document.getElementById('resultadoImp').textContent = `Aciertos: ${aciertos} de ${preguntasImp.length}`;
+    }
+
+    function mostrarCorrectasImp() {
+      preguntasImp.forEach((p, i) => {
+        const caja = document.getElementById(`pregImp-${i}`);
+        Array.from(caja.querySelectorAll('.opcion')).forEach(l => {
+          l.classList.remove('correcta', 'incorrecta');
+        });
+        const labelOk = document.querySelector(`label[for="pImp${i}_op${p.correcta}"]`);
+        if (labelOk) labelOk.classList.add('correcta');
+
+        const expl = document.getElementById(`expImp-${i}`);
+        expl.style.display = 'block';
+      });
+      document.getElementById('resultadoImp').textContent = 'Respuestas correctas marcadas en verde.';
+    }
+
+    function reiniciarImp() {
+      preguntasImp.forEach((p, i) => {
+        const opciones = document.getElementsByName(`pImp${i}`);
+        Array.from(opciones).forEach(op => { op.checked = false; });
+
+        const caja = document.getElementById(`pregImp-${i}`);
+        Array.from(caja.querySelectorAll('.opcion')).forEach(l => {
+          l.classList.remove('correcta', 'incorrecta');
+        });
+
+        const expl = document.getElementById(`expImp-${i}`);
+        expl.style.display = 'none';
+      });
+      document.getElementById('resultadoImp').textContent = '';
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    // Inicialización
+    crearQuizImp();
+    document.getElementById('calcularImp').addEventListener('click', calcularImp);
+    document.getElementById('mostrarCorrectasImp').addEventListener('click', mostrarCorrectasImp);
+    document.getElementById('reiniciarImp').addEventListener('click', reiniciarImp);
+  </script>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a href="index.html">⬅ Volver al inicio</a>
+</body>
+</html>

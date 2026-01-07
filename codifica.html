@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Codifica Software</title>
+  <style>
+    body {
+      font-family: 'Courier New', monospace;
+      background: linear-gradient(135deg, #43cea2, #185a9d);
+      text-align: center;
+      color: #fff;
+    }
+    h1 {
+      font-size: 2.5em;
+      color: #00e676;
+      text-shadow: 2px 2px #1de9b6;
+    }
+    p {
+      font-size: 1.2em;
+      margin: 20px;
+    }
+    a {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background: #00e676;
+      color: #000;
+      border-radius: 8px;
+      text-decoration: none;
+    }
+    a:hover {
+      background: #1de9b6;
+    }
+  </style>
+
+<style>
+  html { scroll-behavior: smooth; }
+  nav {
+    background:#1f1f2e; border-bottom:1px solid #333;
+    position:fixed; top:0; left:0; width:100%; z-index:1000; padding:10px 0;
+  }
+  nav a {
+    color:#4caf50; text-decoration:none; font-weight:bold; margin:0 16px;
+  }
+  nav a:hover { color:#ff9800; }
+  section { padding:90px 20px 40px; border-bottom:1px solid #333; }
+  h2 { color:#03a9f4; }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="#tiposDatos">Tipos de datos</a>
+  <a href="#flujo">Controles graficos</a>
+  <a href="#procesos">Diseño de Procesos</a>
+  <a href="#mensajes">Mensajes</a>
+  <a href="#jar">Archivos JAR</a>
+  <a href="#pdfs">Pdfs de trabajos</a>
+</nav>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+  <h1>💻 Codifica Software</h1>
+
+<!-- Secciones de Codifica -->
+<section id="tiposDatos">
+  <h2> Tipos de datos en Java</h2>
+  
+  <!-- Tema: Tipos de Datos en Java -->
+<section style="margin:30px auto; padding:20px; background:#1e1e2f; border-radius:12px; width:80%; box-shadow:2px 2px 10px rgba(0,0,0,0.4); text-align:left; color:#f5f5f5;">
+  <h2 style="color:#ff9800;"> Tipos de Datos en Java</h2>
+  <p>En Java, los <strong>tipos de datos</strong> definen el tipo de valor que puede almacenar una variable. 
+     Se dividen en <em>primitivos</em> y <em>referenciados</em>.</p>
+
+  <h3 style="margin-top:20px; color:#4caf50;"> Tipos de datos primitivos</h3>
+  <table style="width:100%; border-collapse:collapse; margin-top:15px; background:#2c2c3c; color:#fff;">
+    <tr style="background:#4caf50; color:#fff;">
+      <th style="border:1px solid #4caf50; padding:10px;">Tipo</th>
+      <th style="border:1px solid #4caf50; padding:10px;">Descripción</th>
+      <th style="border:1px solid #4caf50; padding:10px;">Ejemplo</th>
+    </tr>
+    <tr>
+      <td style="border:1px solid #4caf50; padding:10px;"><code>byte</code></td>
+      <td style="border:1px solid #4caf50; padding:10px;">Entero pequeño (-128 a 127)</td>
+      <td style="border:1px solid #4caf50; padding:10px;"><code>byte edad = 17;</code></td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #4caf50; padding:10px;"><code>int</code></td>
+      <td style="border:1px solid #4caf50; padding:10px;">Entero estándar</td>
+      <td style="border:1px solid #4caf50; padding:10px;"><code>int año = 2026;</code></td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #4caf50; padding:10px;"><code>double</code></td>
+      <td style="border:1px solid #4caf50; padding:10px;">Número decimal de doble precisión</td>
+      <td style="border:1px solid #4caf50; padding:10px;"><code>double precio = 19.99;</code></td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #4caf50; padding:10px;"><code>char</code></td>
+      <td style="border:1px solid #4caf50; padding:10px;">Un solo carácter</td>
+      <td style="border:1px solid #4caf50; padding:10px;"><code>char letra letra = 'A';</code></td> </tr> <tr> <td style="border:1px solid #4caf50; padding:10px;"><code>boolean</code></td> <td style="border:1px solid #4caf50; padding:10px;">Valor lógico (true/false)</td> <td style="border:1px solid #4caf50; padding:10px;"><code>boolean activo = true;</code></td> </tr> </table> <h3 style="margin-top:20px; color:#ff9800;"> Tipos de datos referenciados</h3> <p>Son objetos que almacenan referencias en memoria. Ejemplos:</p> <ul> <li><code>String</code>: cadenas de texto (<code>String nombre =  "Andre";</code>)</li> <li>Arreglos: colecciones de valores (<code>int[] numeros = {1,2,3};</code>)</li> <li>Clases y objetos definidos por el programador.</li> </ul> <h3 style="margin-top:20px; color:#4caf50;">
+         Ejemplo práctico</h3> <pre style="background:#2c2c3c; padding:10px; border-radius:8px; color:#f5f5f5;"> public class TiposDatos { public static void main(String[] args) { int edad = 17; double promedio = 8.5; char inicial = 'A'; boolean aprobado = true; String nombre <br>= "Andre"; System.out.println("Nombre: " + nombre); System.out.println("Edad: " + edad); System.out.println("Promedio: " + promedio); System.out.println("Inicial: <br>" + inicial); System.out.println("¿Aprobado?: " + aprobado); } } </pre> <h3 style="margin-top:20px; color:#ff9800;">
+         Tips </h3> <ul> <li>Usa <code>int</code> para enteros y <code>double</code> para decimales.</li> <li><code>boolean</code> es ideal para condiciones lógicas.</li> <li><code>String</code> es muy usado para manejar texto.</li> <li>Los tipos primitivos son más rápidos, pero los referenciados ofrecen más funcionalidades.</li>
+       </ul>
+      </section>
+</section>
+
+<section id="flujo">
+  <h2>⚙️ Controles graficos</h2>
+   <!-- Tema: Controles gráficos en Java -->
+<section style="margin:30px auto; padding:20px; background:#1e1e2f; border-radius:12px; width:80%; box-shadow:2px 2px 10px rgba(0,0,0,0.4); text-align:left; color:#f5f5f5;">
+  <h2 style="color:#ff5722;"> Controles gráficos en Java</h2>
+  <p>En Java, los <strong>controles gráficos</strong> permiten crear interfaces visuales para interactuar con el usuario. 
+     Se implementan principalmente con <code>Swing</code> o <code>JavaFX</code>.</p>
+
+  <h3 style="margin-top:20px; color:#4caf50;"> Controles básicos en Swing</h3>
+  <ul>
+    <li><code>JButton</code>: botón que ejecuta una acción al hacer clic.</li>
+    <li><code>JLabel</code>: etiqueta para mostrar texto o imágenes.</li>
+    <li><code>JTextField</code>: campo de texto para ingresar datos.</li>
+    <li><code>JCheckBox</code>: casilla de verificación.</li>
+    <li><code>JRadioButton</code>: botón de opción única dentro de un grupo.</li>
+  </ul>
+
+  <h3 style="margin-top:20px; color:#ff9800;"> Ejemplo práctico</h3>
+  <pre style="background:#2c2c3c; padding:10px; border-radius:8px; color:#f5f5f5;">
+import javax.swing.*;
+
+public class ControlesSwing {
+    public static void main(String[] args) {
+        JFrame ventana = new JFrame("Ejemplo de Controles");
+        ventana.setSize(300,200);
+        ventana.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+        // Crear controles
+        JButton boton = new JButton("Haz clic");
+        JLabel etiqueta = new JLabel("Escribe tu nombre:");
+        JTextField campoTexto = new JTextField(15);
+
+        // Panel para organizar
+        JPanel panel = new JPanel();
+        panel.add(etiqueta);
+        panel.add(campoTexto);
+        panel.add(boton);
+
+        ventana.add(panel);
+        ventana.setVisible(true);
+    }
+}
+  </pre>
+
+  <h3 style="margin-top:20px; color:#4caf50;"> Tips </h3>
+  <ul>
+    <li>Todos los controles en Swing empiezan con <code>J</code> (ejemplo: <code>JButton</code>).</li>
+    <li>Usa <code>JPanel</code> para organizar los controles dentro de la ventana.</li>
+    <li>Siempre cierra la ventana con <code>setDefaultCloseOperation</code>.</li>
+    <li>JavaFX es otra opción más moderna para GUIs, con controles similares.</li>
+  </ul>
+</section>
+</section>
+
+<section id="procesos">
+  <h2>🖱️ Diseñar Procesos</h2>
+  <!-- Tema: Diseñar Procesos -->
+<section style="margin:30px auto; padding:20px; background:#263238; border-radius:12px; width:80%; box-shadow:2px 2px 10px rgba(0,0,0,0.4); text-align:left; color:#f5f5f5;">
+  <h2 style="color:#ff9800;"> Diseñar Procesos en Software</h2>
+  <p>El <strong>diseño de procesos</strong> consiste en organizar las actividades de un sistema o proyecto 
+     para que se ejecuten de forma ordenada, eficiente y clara.</p>
+
+  <h3 style="margin-top:20px; color:#4caf50;"> Etapas principales</h3>
+  <ul>
+    <li><strong>Identificación:</strong> definir qué proceso se necesita (ejemplo: registro de usuarios).</li>
+    <li><strong>Modelado:</strong> representar el proceso con diagramas de flujo o pseudocódigo.</li>
+    <li><strong>Optimización:</strong> eliminar pasos innecesarios y simplificar tareas.</li>
+    <li><strong>Implementación:</strong> traducir el proceso a código o herramientas digitales.</li>
+    <li><strong>Evaluación:</strong> probar y ajustar el proceso para mejorar su rendimiento.</li>
+  </ul>
+
+  <h3 style="margin-top:20px; color:#ff9800;"> Ejemplo práctico</h3>
+  <p>Proceso: <strong>Registro de un nuevo usuario</strong></p>
+  <ol>
+    <li>El usuario llena un formulario con sus datos.</li>
+    <li>El sistema valida que los campos estén completos.</li>
+    <li>Se verifica si el correo ya existe en la base de datos.</li>
+    <li>Si no existe, se guarda la información y se envía un correo de confirmación.</li>
+    <li>Si existe, se muestra un mensaje de error.</li>
+  </ol>
+
+  <h3 style="margin-top:20px; color:#4caf50;"> Tips</h3>
+  <ul>
+    <li>Usa diagramas de flujo para visualizar los pasos.</li>
+    <li>Divide procesos grandes en subprocesos más simples.</li>
+    <li>Siempre piensa en la experiencia del usuario final.</li>
+    <li>Documenta cada proceso para que otros puedan entenderlo fácilmente.</li>
+  </ul>
+</section>
+
+</section>
+
+<section id="mensajes">
+  <h2>💬 Mostrar mensajes</h2>
+  <!-- Tema: Mostrar mensajes en Java -->
+<section style="margin:30px auto; padding:20px; background:#2c2c3c; border-radius:12px; width:80%; box-shadow:2px 2px 10px rgba(0,0,0,0.4); text-align:left; color:#f5f5f5;">
+  <h2 style="color:#ffeb3b;"> Mostrar mensajes en Java</h2>
+  <p>En Java podemos mostrar mensajes de dos formas principales:</p>
+  <ul>
+    <li><strong>En consola</strong>: usando <code>System.out.println()</code>.</li>
+    <li><strong>En ventana emergente</strong>: usando <code>JOptionPane</code> de la librería Swing.</li>
+  </ul>
+
+  <h3 style="margin-top:20px; color:#4caf50;"> Mensaje en consola</h3>
+  <pre style="background:#1e1e2f; padding:10px; border-radius:8px; color:#f5f5f5;">
+public class MensajeConsola {
+    public static void main(String[] args) {
+        System.out.println("¡Hola, Andre! Bienvenido a Java");
+    }
+}
+  </pre>
+  <p>Este código imprime el mensaje directamente en la consola.</p>
+
+  <h3 style="margin-top:20px; color:#ff9800;"> Mensaje en ventana emergente</h3>
+  <pre style="background:#1e1e2f; padding:10px; border-radius:8px; color:#f5f5f5;">
+import javax.swing.JOptionPane;
+
+public class MensajeVentana {
+    public static void main(String[] args) {
+        JOptionPane.showMessageDialog(null, "¡Hola, Andre! Este es un mensaje en ventana");
+    }
+}
+  </pre>
+  <p> Este código abre una ventana emergente con el mensaje.</p>
+
+  <h3 style="margin-top:20px; color:#ffeb3b;"> Tips </h3>
+  <ul>
+    <li><code>System.out.println()</code> es ideal para pruebas rápidas y mensajes en consola.</li>
+    <li><code>JOptionPane</code> se usa para interfaces gráficas simples.</li>
+    <li>Siempre importa <code>javax.swing.JOptionPane</code> si quieres usar ventanas emergentes.</li>
+  </ul>
+</section>
+</section>
+
+<section id="jar">
+  <h2>📦 Archivos JAR</h2>
+  <!-- Tema: Archivos .JAR en Java -->
+<section style="margin:30px auto; padding:20px; background:#1e1e2f; border-radius:12px; width:80%; box-shadow:2px 2px 10px rgba(0,0,0,0.4); text-align:left; color:#f5f5f5;">
+  <h2 style="color:#ff9800;"> Archivos .JAR en Java</h2>
+  <p>Un archivo <strong>.JAR</strong> (Java ARchive) es un paquete que contiene clases compiladas, recursos y metadatos de un programa Java. 
+     Se utiliza para distribuir aplicaciones completas en un solo archivo.</p>
+
+  <h3 style="margin-top:20px; color:#4caf50;"> Características principales</h3>
+  <ul>
+    <li>Es básicamente un archivo <code>.zip</code> con extensión <code>.jar</code>.</li>
+    <li>Puede contener clases compiladas (<code>.class</code>), imágenes, sonidos y otros recursos.</li>
+    <li>Incluye un archivo <code>MANIFEST.MF</code> que describe la aplicación.</li>
+    <li>Permite ejecutar programas con un solo comando.</li>
+  </ul>
+
+  <h3 style="margin-top:20px; color:#ff9800;"> Cómo crear un archivo JAR</h3>
+  <pre style="background:#2c2c3c; padding:10px; border-radius:8px; color:#f5f5f5;">
+// Compilar las clases
+javac MiPrograma.java
+
+// Crear el archivo JAR
+jar cvf MiPrograma.jar MiPrograma.class
+  </pre>
+
+  <h3 style="margin-top:20px; color:#4caf50;">▶️ Cómo ejecutar un archivo JAR</h3>
+  <pre style="background:#2c2c3c; padding:10px; border-radius:8px; color:#f5f5f5;">
+java -jar MiPrograma.jar
+  </pre>
+  <p> Este comando abre la aplicación contenida en el archivo JAR.</p>
+
+  <h3 style="margin-top:20px; color:#ff9800;"> Tips </h3>
+  <ul>
+    <li>Siempre incluye un archivo <code>MANIFEST.MF</code> con la clase principal (<code>Main-Class</code>).</li>
+    <li>Los JAR permiten compartir aplicaciones fácilmente.</li>
+    <li>También se usan para librerías que otros programas pueden importar.</li>
+  </ul>
+</section>
+</section>
+
+<section id="Pdfs">
+  <h2>⌨️ Pdfs de trabajos</h2>
+    <embed src="codifica.pdf" type="application/pdf" width="100%" height="600px" />
+
+</section>
+
+
+
+
+     
+
+
+
+
+
+
+
+     <a href="index.html">⬅ Volver al inicio</a>
+</body>
+</html>

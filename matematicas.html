@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Cuestionario de Matemáticas</title>
+  <style>
+    body {
+      font-family: 'Trebuchet MS', sans-serif;
+      background: linear-gradient(135deg, #a1c4fd, #c2e9fb);
+      text-align: center;
+      color: #222;
+    }
+    h1 {
+      font-size: 2.5em;
+      color: #0d47a1;
+      text-shadow: 2px 2px #64b5f6;
+    }
+    .question {
+      margin: 20px;
+      font-size: 1.2em;
+    }
+    button {
+      margin: 10px;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      background: #0d47a1;
+      color: #fff;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    button:hover {
+      background: #64b5f6;
+    }
+    #resultado {
+      margin-top: 20px;
+      font-size: 1.3em;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <br>
+  <br>
+    <br>
+
+      <br>
+
+    <h1>📐 Matemáticas</h1>
+
+
+<nav style="background-color:#0d47a1; padding:10px; position:fixed; top:0; width:100%; z-index:1000;">
+  <ul style="list-style:none; margin:0; padding:0; display:flex; justify-content:center;">
+    <li style="margin:0 15px;"><a href="#exponentes" style="color:#fff; text-decoration:none; font-weight:bold;">Exponentes</a></li>
+    <li style="margin:0 15px;"><a href="#mcm" style="color:#fff; text-decoration:none; font-weight:bold;">MCM</a></li>
+    <li style="margin:0 15px;"><a href="#mcd" style="color:#fff; text-decoration:none; font-weight:bold;">MCD</a></li>
+    <li style="margin:0 15px;"><a href="#porcentajes" style="color:#fff; text-decoration:none; font-weight:bold;">Porcentajes</a></li>
+    <li style="margin:0 15px;"><a href="#lineaRecta" style="color:#fff; text-decoration:none; font-weight:bold;">Línea Recta</a></li>
+    <li style="margin:0 15px;"><a href="#pdfs" style="color:#fff; text-decoration:none; font-weight:bold;">pdfs de trabajos</a></li>
+  </ul>
+</nav>
+
+
+<section id="exponentes" style="padding-top:80px;">
+  <h2>📘 Exponentes</h2>
+  <section style="margin:30px auto; padding:20px; background:#fff; border-radius:12px; width:80%; box-shadow:2px 2px 10px rgba(0,0,0,0.2); text-align:left;">
+  <h2 style="color:#0d47a1;">Leyes de los Exponentes</h2>
+  <p>Un exponente indica cuántas veces se multiplica una base por sí misma. Ejemplo: 
+    <code>2³ = 2 × 2 × 2 = 8</code>.
+  </p>
+
+  <table style="width:100%; border-collapse:collapse; margin-top:15px;">
+    <tr style="background:#e3f2fd;">
+      <th style="border:1px solid #0d47a1; padding:10px;">Ley</th>
+      <th style="border:1px solid #0d47a1; padding:10px;">Expresión</th>
+      <th style="border:1px solid #0d47a1; padding:10px;">Ejemplo</th>
+    </tr>
+    <tr>
+      <td style="border:1px solid #0d47a1; padding:10px;">Multiplicación de potencias</td>
+      <td style="border:1px solid #0d47a1; padding:10px;"><code>a^m × a^n = a^(m+n)</code></td>
+      <td style="border:1px solid #0d47a1; padding:10px;"><code>2³ × 2² = 2⁵ = 32</code></td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #0d47a1; padding:10px;">División de potencias</td>
+      <td style="border:1px solid #0d47a1; padding:10px;"><code>a^m ÷ a^n = a^(m-n)</code></td>
+      <td style="border:1px solid #0d47a1; padding:10px;"><code>5⁴ ÷ 5² = 5² = 25</code></td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #0d47a1; padding:10px;">Potencia de una potencia</td>
+      <td style="border:1px solid #0d47a1; padding:10px;"><code>(a^m)^n = a^(m·n)</code></td>
+      <td style="border:1px solid #0d47a1; padding:10px;"><code>(3²)³ = 3⁶ = 729</code></td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #0d47a1; padding:10px;">Exponente cero</td>
+      <td style="border:1px solid #0d47a1; padding:10px;"><code>a⁰ = 1</code> (si a ≠ 0)</td>
+      <td style="border:1px solid #0d47a1; padding:10px;"><code>7⁰ = 1</code></td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #0d47a1; padding:10px;">Exponente negativo</td>
+      <td style="border:1px solid #0d47a1; padding:10px;"><code>a^(-n) = 1 / a^n</code></td>
+      <td style="border:1px solid #0d47a1; padding:10px;"><code>2⁻³ = 1 / 2³ = 1/8</code></td>
+    </tr>
+  </table>
+
+  <h3 style="margin-top:20px; color:#0d47a1;"> Ejemplo práctico</h3>
+  <p>Resuelve: <code>(x³ × x²) ÷ x⁴</code></p>
+  <p><strong>Solución:</strong> <code>x^(3+2-4) = x¹ = x</code></p>
+
+  <h3 style="margin-top:20px; color:#0d47a1;"> Tips </h3>
+  <ul>
+    <li>Multiplicar potencias con la misma base → suma los exponentes.</li>
+    <li>Dividir potencias con la misma base → resta los exponentes.</li>
+    <li>Un exponente cero siempre da 1 (si la base no es cero).</li>
+    <li>Un exponente negativo convierte la potencia en fracción.</li>
+  </ul>
+</section>
+</section>
+
+<section id="mcm" style="padding-top:80px;">
+  <h2>📘 Mínimo Común Múltiplo (MCM)</h2>
+  
+<!-- Tema: Mínimo Común Múltiplo -->
+<section style="margin:30px auto; padding:20px; background:#fff; border-radius:12px; width:80%; box-shadow:2px 2px 10px rgba(0,0,0,0.2); text-align:left;">
+  <h2 style="color:#0d47a1;"> Mínimo Común Múltiplo (MCM)</h2>
+  <p>El <strong>Mínimo Común Múltiplo</strong> de dos o más números es el número más pequeño (mayor que cero) que es múltiplo de todos ellos.</p>
+
+  <h3 style="margin-top:20px; color:#0d47a1;"> Métodos para calcular el MCM</h3>
+  <ul>
+    <li><strong>Por múltiplos:</strong> listar los múltiplos de cada número y encontrar el primero que coincida.</li>
+    <li><strong>Por descomposición en factores primos:</strong> descomponer cada número en factores primos y tomar los factores comunes y no comunes con el mayor exponente.</li>
+  </ul>
+
+  <h3 style="margin-top:20px; color:#0d47a1;"> Ejemplo práctico</h3>
+  <p>Encuentra el MCM de <code>12</code> y <code>18</code>.</p>
+  <p><strong>Solución por múltiplos:</strong></p>
+  <ul>
+    <li>Múltiplos de 12: 12, 24, 36, 48, 60...</li>
+    <li>Múltiplos de 18: 18, 36, 54, 72...</li>
+  </ul>
+  <p> El primer múltiplo común es <strong>36</strong>, por lo tanto <code>MCM(12,18) = 36</code>.</p>
+
+  <p><strong>Solución por factores primos:</strong></p>
+  <ul>
+    <li>12 = 2² × 3</li>
+    <li>18 = 2 × 3²</li>
+  </ul>
+  <p> Tomamos los factores con el mayor exponente: 2² × 3² = 36.</p>
+
+  <h3 style="margin-top:20px; color:#0d47a1;"> Tips</h3>
+  <ul>
+    <li>El MCM siempre es mayor o igual al número más grande de la lista.</li>
+    <li>Usa factores primos para evitar errores en números grandes.</li>
+    <li>El MCM se usa en problemas de sincronización, fracciones y divisibilidad.</li>
+  </ul>
+</section>
+</section>
+
+<section id="mcd" style="padding-top:80px;">
+  <h2>📘 Máximo Común Divisor (MCD)</h2>
+  
+
+<!-- Tema: Máximo Común Divisor -->
+<section style="margin:30px auto; padding:20px; background:#fff; border-radius:12px; width:80%; box-shadow:2px 2px 10px rgba(0,0,0,0.2); text-align:left;">
+  <h2 style="color:#0d47a1;"> Máximo Común Divisor (MCD)</h2>
+  <p>El <strong>Máximo Común Divisor</strong> de dos o más números es el número más grande que divide exactamente a todos ellos.</p>
+
+  <h3 style="margin-top:20px; color:#0d47a1;"> Métodos para calcular el MCD</h3>
+  <ul>
+    <li><strong>Por descomposición en factores primos:</strong> descomponer cada número y tomar los factores comunes con el menor exponente.</li>
+    <li><strong>Por divisiones sucesivas (algoritmo de Euclides):</strong> dividir el número mayor entre el menor y continuar con el resto hasta llegar a cero.</li>
+    <li><strong>Por lista de divisores:</strong> escribir los divisores de cada número y elegir el mayor que coincida.</li>
+  </ul>
+
+  <h3 style="margin-top:20px; color:#0d47a1;"> Ejemplo práctico</h3>
+  <p>Encuentra el MCD de <code>24</code> y <code>36</code>.</p>
+  <p><strong>Solución por factores primos:</strong></p>
+  <ul>
+    <li>24 = 2³ × 3</li>
+    <li>36 = 2² × 3²</li>
+  </ul>
+  <p> Tomamos los factores comunes con el menor exponente: 2² × 3 = 12.</p>
+  <p><strong>Resultado:</strong> <code>MCD(24,36) = 12</code>.</p>
+
+  <h3 style="margin-top:20px; color:#0d47a1;"> Tips </h3>
+  <ul>
+    <li>El MCD siempre es menor o igual al número más pequeño de la lista.</li>
+    <li>El MCD se usa para simplificar fracciones.</li>
+    <li>El algoritmo de Euclides es rápido y útil para números grandes.</li>
+  </ul>
+</section>
+</section>
+
+<section id="porcentajes" style="padding-top:80px;">
+  <h2>📘 Porcentajes</h2>
+  
+<!-- Tema: Porcentajes -->
+<section style="margin:30px auto; padding:20px; background:#fff; border-radius:12px; width:80%; box-shadow:2px 2px 10px rgba(0,0,0,0.2); text-align:left;">
+  <h2 style="color:#0d47a1;"> Porcentajes</h2>
+  <p>Un <strong>porcentaje</strong> es una forma de expresar una cantidad como una fracción de 100. 
+     Se utiliza para comparar proporciones, calcular descuentos, intereses y probabilidades.</p>
+
+  <h3 style="margin-top:20px; color:#0d47a1;"> Fórmula básica</h3>
+  <p>Para calcular el porcentaje de una cantidad:</p>
+  <p><code>(Parte ÷ Total) × 100</code></p>
+  <p>Ejemplo: Si en un grupo de 50 estudiantes, 20 son mujeres:</p>
+  <p><code>(20 ÷ 50) × 100 = 40%</code></p>
+
+  <h3 style="margin-top:20px; color:#0d47a1;"> Ejemplo práctico</h3>
+  <p>Un producto cuesta $200 y tiene un descuento del 15%. ¿Cuál es el precio final?</p>
+  <ul>
+    <li>Descuento = <code>(200 × 15) ÷ 100 = 30</code></li>
+    <li>Precio final = <code>200 - 30 = 170</code></li>
+  </ul>
+  <p> El precio con descuento es <strong>$170
+    <h3 style="margin-top:20px; color:#0d47a1;"> Tips </h3> <ul> <li>El símbolo <code>%</code> significa “por cada 100”.</li> <li>Para calcular un porcentaje rápido, multiplica y divide entre 100.</li> <li>Los porcentajes se usan mucho en descuentos, estadísticas y finanzas.</li> 
+    </ul> </section>
+
+</section>
+
+<section id="lineaRecta" style="padding-top:80px;">
+  <h2>📘 Línea Recta</h2>
+   <!-- Tema: La Línea Recta -->
+<section style="margin:30px auto; padding:20px; background:#fff; border-radius:12px; width:80%; box-shadow:2px 2px 10px rgba(0,0,0,0.2); text-align:left;">
+  <h2 style="color:#0d47a1;"> La Línea Recta</h2>
+  <p>En geometría analítica, una <strong>línea recta</strong> se representa mediante una ecuación que relaciona las coordenadas <code>x</code> y <code>y</code> de todos sus puntos.</p>
+
+  <h3 style="margin-top:20px; color:#0d47a1;">🔎 Ecuación general de la recta</h3>
+  <p><code>Ax + By + C = 0</code></p>
+  <p>Donde <code>A</code>, <code>B</code> y <code>C</code> son constantes.</p>
+
+  <h3 style="margin-top:20px; color:#0d47a1;"> Ecuación en forma pendiente–ordenada</h3>
+  <p><code>y = mx + b</code></p>
+  <ul>
+    <li><code>m</code> = pendiente de la recta (indica inclinación).</li>
+    <li><code>b</code> = ordenada al origen (punto donde la recta corta al eje Y).</li>
+  </ul>
+
+  <h3 style="margin-top:20px; color:#0d47a1;"> Ejemplo práctico</h3>
+  <p>Encuentra la ecuación de la recta que pasa por los puntos (0,2) y (3,5).</p>
+  <ul>
+    <li>Pendiente: <code>m = (5 - 2) / (3 - 0) = 3/3 = 1</code></li>
+    <li>Ordenada al origen: <code>b = 2</code></li>
+  </ul>
+  <p> La ecuación es <code>y = x + 2</code>.</p>
+
+  <h3 style="margin-top:20px; color:#0d47a1;"> Tips</h3>
+  <ul>
+    <li>La pendiente positiva indica que la recta sube hacia la derecha.</li>
+    <li>La pendiente negativa indica que la recta baja hacia la derecha.</li>
+    <li>Si <code>m = 0</code>, la recta es horizontal.</li>
+    <li>Si la recta es vertical, su ecuación es <code>x = a</code>.</li>
+  </ul>
+</section>
+</section>
+
+<section id="pdfs" style="padding-top:80px;">
+  <h2>📘 Pdfs de trabajos</h2>
+  <embed src="matemáticas.pdf" type="application/pdf" width="100%" height="600px" />
+
+
+</section>
+
+      
+<!-- Quiz de Matemáticas: Exponentes, MCM, MCD, Porcentajes, Línea Recta -->
+<section id="quizMatematicas" style="margin:30px auto; padding:20px; background:#f5f5f5; border-radius:12px; width:85%; box-shadow:0 4px 12px rgba(0,0,0,0.1); color:#333;">
+  <h2 style="text-align:center; color:#0d47a1;">🧠 Quiz de Matemáticas (20 preguntas)</h2>
+  <p style="text-align:center;">Temas: Exponentes, MCM, MCD, Porcentajes y Línea Recta. Selecciona una opción por pregunta y presiona "Calcular Puntaje".</p>
+
+  <style>
+    .pregunta { background:#fff; border:1px solid #ddd; border-radius:8px; padding:12px; margin:12px 0; }
+    .opcion { display:block; margin:6px 0; cursor:pointer; }
+    .correcta { background:#c8e6c9; border:1px solid #2e7d32; }
+    .incorrecta { background:#ffcdd2; border:1px solid #c62828; }
+    .explicacion { font-size:0.95em; color:#444; margin-top:6px; }
+    #resultado { font-weight:bold; color:#0d47a1; text-align:center; margin-top:16px; }
+    #acciones { display:flex; gap:12px; justify-content:center; margin-top:16px; }
+    button { background:#0d47a1; color:#fff; border:none; border-radius:6px; padding:10px 14px; cursor:pointer; }
+    button:hover { background:#1565c0; }
+    .separador { margin:22px 0 8px; font-weight:bold; color:#37474f; }
+  </style>
+
+  <div id="contenedorPreguntas"></div>
+
+  <div id="acciones">
+    <button id="calcular">Calcular Puntaje</button>
+    <button id="mostrarCorrectas" style="background:#2e7d32;">Mostrar respuestas correctas</button>
+    <button id="reiniciar" style="background:#e65100;">Reiniciar</button>
+  </div>
+  <div id="resultado"></div>
+
+  <script>
+    const preguntas = [
+      // Exponentes (1-4)
+      { t:"Exponentes", q:"1) ¿Cuánto es 2^5?", opciones:["16","32","64","24"], correcta:1, exp:"2^5 = 2·2·2·2·2 = 32." },
+      { t:"Exponentes", q:"2) ¿Cuál es 3^0?", opciones:["0","1","3","No existe"], correcta:1, exp:"Todo número distinto de 0 elevado a 0 vale 1." },
+      { t:"Exponentes", q:"3) Simplifica: 5^3 · 5^2", opciones:["5^5","5^6","25^5","5^1"], correcta:0, exp:"Suma de exponentes con misma base: 5^(3+2) = 5^5." },
+      { t:"Exponentes", q:"4) ¿Cuál es el inverso de 4^2?", opciones:["1/8","1/16","1/4","1/2"], correcta:1, exp:"4^2 = 16, su inverso multiplicativo es 1/16." },
+
+      // MCM (5-8)
+      { t:"MCM", q:"5) MCM(6,8) es:", opciones:["12","24","48","36"], correcta:1, exp:"6=2·3, 8=2^3. MCM=2^3·3=24." },
+      { t:"MCM", q:"6) MCM(9,12) es:", opciones:["18","36","72","24"], correcta:1, exp:"9=3^2, 12=2^2·3. MCM=2^2·3^2=36." },
+      { t:"MCM", q:"7) MCM(10,15) es:", opciones:["20","30","60","45"], correcta:2, exp:"10=2·5, 15=3·5. MCM=2·3·5=30? Falta 2 y 3: más alto → 2·3·5=30; incluir ambos → 2·3·5=30; pero cubrir 10 y 15: 30. Corrige: La opción correcta es 30.", corregir:true },
+      { t:"MCM", q:"8) MCM(4,14) es:", opciones:["28","56","14","42"], correcta:1, exp:"4=2^2, 14=2·7. MCM=2^2·7=28." },
+
+      // MCD (9-12)
+      { t:"MCD", q:"9) MCD(20,30) es:", opciones:["5","10","15","20"], correcta:1, exp:"20=2^2·5, 30=2·3·5. MCD=2·5=10." },
+      { t:"MCD", q:"10) MCD(18,24) es:", opciones:["6","8","12","18"], correcta:2, exp:"18=2·3^2, 24=2^3·3. MCD=2·3=6? Máximo común: 2^1·3^1=6. Corrige: la opción correcta es 6.", corregir:true },
+      { t:"MCD", q:"11) MCD(14,21) es:", opciones:["7","3","14","21"], correcta:0, exp:"14=2·7, 21=3·7. MCD=7." },
+      { t:"MCD", q:"12) MCD(16,40) es:", opciones:["4","8","16","20"], correcta:1, exp:"16=2^4, 40=2^3·5. MCD=2^3=8." },
+
+      // Porcentajes (13-16)
+      { t:"Porcentajes", q:"13) El 20% de 150 es:", opciones:["25","30","35","40"], correcta:1, exp:"20% de 150 = 0.20·150 = 30." },
+      { t:"Porcentajes", q:"14) Si un precio de 200 sube 15%, nuevo precio es:", opciones:["215","220","230","235"], correcta:2, exp:"200·1.15 = 230." },
+      { t:"Porcentajes", q:"15) Descuento del 25% a 80:", opciones:["60","62","65","70"], correcta:0, exp:"80·0.75 = 60." },
+      { t:"Porcentajes", q:"16) ¿Qué porcentaje es 45 de 90?", opciones:["40%","45%","50%","55%"], correcta:2, exp:"45/90=0.5 → 50%." },
+
+      // Línea recta (17-20)
+      { t:"Línea Recta", q:"17) Pendiente de la recta que pasa por (1,2) y (3,6):", opciones:["2","1","3","4"], correcta:0, exp:"m=(6-2)/(3-1)=4/2=2." },
+      { t:"Línea Recta", q:"18) Ecuación con pendiente 3 y pasa por (0,5):", opciones:["y=3x+5","y=5x+3","y=3x-5","y=x+3"], correcta:0, exp:"Intercepto b=5 → y=3x+5." },
+      { t:"Línea Recta", q:"19) Si m=0, la recta es:", opciones:["Vertical","Horizontal","Inclinado positiva","Inclinado negativa"], correcta:1, exp:"m=0 → recta horizontal." },
+      { t:"Línea Recta", q:"20) Pendiente de y=−2x+7:", opciones:["−2","2","−7","7"], correcta:0, exp:"En y=mx+b, m=−2." }
+    ];
+
+    // Correcciones de dos ítems mal definidos (ajuste de seguridad)
+    preguntas[6].correcta = 1; // MCM(10,15) = 30
+    preguntas[9].correcta = 0; // MCD(18,24) = 6
+
+    function crearQuiz() {
+      const cont = document.getElementById('contenedorPreguntas');
+      let temaActual = "";
+      preguntas.forEach((p, i) => {
+        if (p.t !== temaActual) {
+          temaActual = p.t;
+          const sep = document.createElement('div');
+          sep.className = 'separador';
+          sep.textContent = `Tema: ${temaActual}`;
+          cont.appendChild(sep);
+        }
+        const caja = document.createElement('div');
+        caja.className = 'pregunta';
+        caja.id = `preg-${i}`;
+
+        const titulo = document.createElement('div');
+        titulo.innerHTML = `<strong>${p.q}</strong>`;
+        caja.appendChild(titulo);
+
+        p.opciones.forEach((op, idx) => {
+          const idInput = `p${i}_op${idx}`;
+          const label = document.createElement('label');
+          label.className = 'opcion';
+          label.setAttribute('for', idInput);
+
+          const input = document.createElement('input');
+          input.type = 'radio';
+          input.name = `p${i}`;
+          input.id = idInput;
+          input.value = idx;
+          input.style.marginRight = '8px';
+
+          label.appendChild(input);
+          label.appendChild(document.createTextNode(op));
+          caja.appendChild(label);
+        });
+
+        const expl = document.createElement('div');
+        expl.className = 'explicacion';
+        expl.id = `exp-${i}`;
+        expl.style.display = 'none';
+        expl.textContent = p.exp;
+        caja.appendChild(expl);
+
+        cont.appendChild(caja);
+      });
+    }
+
+    function calcularPuntaje() {
+      let aciertos = 0;
+      preguntas.forEach((p, i) => {
+        const opciones = document.getElementsByName(`p${i}`);
+        let seleccion = -1;
+        opciones.forEach(op => { if (op.checked) seleccion = parseInt(op.value); });
+
+        const caja = document.getElementById(`preg-${i}`);
+        // Limpiar estilos previos
+        Array.from(caja.querySelectorAll('.opcion')).forEach(l => {
+          l.classList.remove('correcta', 'incorrecta');
+        });
+
+        if (seleccion === p.correcta) {
+          aciertos++;
+          // marcar correcta seleccionada
+          const labelSel = document.querySelector(`label[for="p${i}_op${seleccion}"]`);
+          if (labelSel) labelSel.classList.add('correcta');
+        } else {
+          // marcar seleccionada como incorrecta y mostrar correcta
+          if (seleccion !== -1) {
+            const labelSel = document.querySelector(`label[for="p${i}_op${seleccion}"]`);
+            if (labelSel) labelSel.classList.add('incorrecta');
+          }
+          const labelOk = document.querySelector(`label[for="p${i}_op${p.correcta}"]`);
+          if (labelOk) labelOk.classList.add('correcta');
+        }
+        // Mostrar explicación
+        const expl = document.getElementById(`exp-${i}`);
+        expl.style.display = 'block';
+      });
+      document.getElementById('resultado').textContent = `Aciertos: ${aciertos} de ${preguntas.length}`;
+    }
+
+    function mostrarCorrectas() {
+      preguntas.forEach((p, i) => {
+        const caja = document.getElementById(`preg-${i}`);
+        Array.from(caja.querySelectorAll('.opcion')).forEach(l => {
+          l.classList.remove('correcta', 'incorrecta');
+        });
+        const labelOk = document.querySelector(`label[for="p${i}_op${p.correcta}"]`);
+        if (labelOk) labelOk.classList.add('correcta');
+        const expl = document.getElementById(`exp-${i}`);
+        expl.style.display = 'block';
+      });
+      document.getElementById('resultado').textContent = "Respuestas correctas marcadas en verde.";
+    }
+
+    function reiniciarQuiz() {
+      preguntas.forEach((p, i) => {
+        const opciones = document.getElementsByName(`p${i}`);
+        opciones.forEach(op => { op.checked = false; });
+        const caja = document.getElementById(`preg-${i}`);
+        Array.from(caja.querySelectorAll('.opcion')).forEach(l => {
+          l.classList.remove('correcta', 'incorrecta');
+        });
+        const expl = document.getElementById(`exp-${i}`);
+        expl.style.display = 'none';
+      });
+      document.getElementById('resultado').textContent = "";
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    // Inicializar
+    crearQuiz();
+    document.getElementById('calcular').addEventListener('click', calcularPuntaje);
+    document.getElementById('mostrarCorrectas').addEventListener('click', mostrarCorrectas);
+    document.getElementById('reiniciar').addEventListener('click', reiniciarQuiz);
+  </script>
+</section>
+
+
+
+
+
+   
+  <a href="index.html">⬅ Volver al inicio</a>
+
+
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <style>
+    body {
+      font-family: 'Comic Sans MS', cursive;
+      background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+      text-align: center;
+      color: #333;
+    }
+    h1 {
+      font-size: 3em;
+      color: #222;
+      text-shadow: 2px 2px #ff6f61;
+    }
+    nav {
+      margin-top: 30px;
+    }
+    a {
+      display: inline-block;
+      margin: 15px;
+      padding: 15px 25px;
+      background: #fff;
+      border-radius: 12px;
+      text-decoration: none;
+      font-weight: bold;
+      color: #444;
+      transition: 0.3s;
+    }
+    a:hover {
+      background: #ff6f61;
+      color: #fff;
+      transform: scale(1.1);
+    }
+    #fecha, #hora, #visitas {
+      font-size: 1.2em;
+      margin: 15px;
+    }
+  </style>
+</head>
+<body>
+  <h1> Mi Proyecto Escolar </h1>
+
+
+
+  <nav>
+    <a href="matematicas.html">📐 Matemáticas</a>
+    <a href="ingles.html">🇬🇧 Inglés</a>
+    <a href="lengua.html">📝 Lengua y Comunicación</a>
+    <a href="codifica.html">💻 Codifica Software</a>
+    <a href="implementa.html">⚙️ Implementa Software</a>
+  </nav>
+
+  
+  <div id="fecha"></div>
+  <div id="hora"></div>
+  <div id="visitas"></div>
+
+
+  <script>
+
+    function actualizarTiempo() {
+      const ahora = new Date();
+      const opcionesFecha = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+      const fecha = ahora.toLocaleDateString('es-ES', opcionesFecha);
+      const hora = ahora.toLocaleTimeString('es-ES');
+
+      document.getElementById("fecha").innerText = " Fecha: " + fecha;
+      document.getElementById("hora").innerText = " Hora: " + hora;
+    }
+
+  
+    setInterval(actualizarTiempo, 1000);
+    actualizarTiempo();
+
+    let visitas = localStorage.getItem("visitas");
+    if (visitas === null) {
+      visitas = 1;
+    } else {
+      visitas = parseInt(visitas) + 1;
+    }
+    localStorage.setItem("visitas", visitas);
+
+    document.getElementById("visitas").innerText = " Número de visitas en este navegador: " + visitas;
+  </script>
+</body>
+</html>
